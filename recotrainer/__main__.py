@@ -92,6 +92,7 @@ def main():
     main_menu = pygameMenu.Menu(surface,
                                 bgfun=main_background,
                                 title="Recomaster",
+                                onclose=pygameMenu.events.EXIT,
                                 **menu_cfg
                                 )
     main_menu.set_fps(FPS, recursive=True)
